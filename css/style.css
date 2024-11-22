@@ -1224,8 +1224,95 @@ header {
     margin-bottom: 40px;
   }
 
+  .contacts__our-forms {
+    margin-bottom: 460px;
+  }
+
+  .container__footer {
+    padding-top: 20px;
+  }
+
   .footer__services-items {
     display: inline;
+  }
+
+  .footer__bg-img {
+    height: 1500px;
+  }
+
+  .footer__sections {
+    flex-direction: column;
+  }
+
+  .footer__section-1 {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .footer-section-social {
+    padding-top: 280px;
+    width: 202px;
+    margin: 0 auto;
+  }
+
+  .footer__social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 380px;
+    margin-left: -89px;
+  }
+
+  .footer__services {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    display: inline;
+    width: 202px;
+  }
+
+  .footer__section-2 {
+    flex-direction: column;
+  }
+
+  .footer__section-2 {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .footer__about-us {
+    margin-bottom: 30px;
+  }
+
+  .footer__section-3 {
+    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 96px;
+    height: 100px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    position: relative;
+    justify-content: center;
+    padding-top: 16px;
+    color: #4C4C4C;
+
+  }
+
+  .footer__bottom-item-1 {
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+    margin-right: 30px;
+  }
+
+  .footer__line {
+    position: absolute;
+    top: 45px;
+    border: solid gray 1px;
+    width: 100%;
   }
 }
 
@@ -1283,5 +1370,10 @@ header {
 
   .contact-icon-1 {
     padding-bottom: 18px;
+  }
+
+  .container__footer {
+    padding-top: 0;
+    margin-top: -90px;
   }
 }
