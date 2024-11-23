@@ -46,6 +46,7 @@ header {
 }
 
 .container__slider {
+  height: 939px;
   padding: 0;
   position: relative;
 }
@@ -69,10 +70,89 @@ header {
   text-align: center;
   margin: 0 auto;
   line-height: 1.4;
+  margin-top: 28px;
+}
+
+.menu__sub-line {
+  border: solid #00A4E8 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu__sub-list {
+  position: absolute;
+  top: 100%;
+  background-color: #212121CC;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 4px 16px 0px #9E9E9E4D;
+  top: 63px;
+  text-align: left;
+  z-index: 10;
+  padding: 12px 6px 10px 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  pointer-events: none;
+  margin-left: 20px;
+}
+
+.menu__sub-link {
+  font-family: "Montserrat", system-ui;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 20;
+  display: block;
+  padding-bottom: 13px;
+}
+
+.menu__sub-link:hover {
+  color: #49C7FA;
+  transition: all 0.3s ease 0s;
+}
+
+.header__items>li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.stretch {
+  color: #44C9FF;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.stretch::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #44C9FF;
+  transition: all 0.3s;
+}
+
+.stretch__left::after {
+  left: 0;
+}
+
+.stretch__left:hover::after {
+  width: 100%;
 }
 
 .header__logo {
   margin: 7px 0 auto 5px;
+}
+
+.header__button {
+  margin-top: 16px;
 }
 
 .header__item {
@@ -82,15 +162,49 @@ header {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+}
+
+.header__item:hover {
+  color: #44C9FF;
+  transition: all 0.3s;
+}
+
+.arrow {
+  position: absolute;
+  top: 2px;
+  left: 85px;
+}
+
+.arrow-2 {
+  position: absolute;
+  top: 2px;
+  left: 135px;
+}
+
+.arrow-3 {
+  position: absolute;
+  top: 2px;
+  left: 90px;
+}
+
+.header__item:hover svg path {
+  fill: #44C9FF;
+  transition: all 0.3s;
+}
+
+.item__arrow {
+  margin-right: 35px;
 }
 
 .contacts {
   font-family: "Montserrat", system-ui;
   font-weight: 700;
+  font-size: 16px;
   color: #fff;
   border-radius: 6px;
   border: 2px solid #fff;
-  padding: 12px 10px;
+  padding: 10px 22px;
 }
 
 .contacts:hover {
@@ -206,7 +320,7 @@ header {
 .swiper-pagination {
   text-align: start !important;
   left: 115px !important;
-  bottom: 230px !important;
+  bottom: 265px !important;
 }
 
 .social__box {
