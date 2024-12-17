@@ -1,9 +1,10 @@
 const main__slider = new Swiper('.main__slider', {
 
-    loop: true,
+  loop: true,
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
