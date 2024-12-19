@@ -238,7 +238,7 @@ header {
   background-position: center;
   position: absolute;
   width: 100%;
-  min-height: 100%;
+  min-height: 1611px;
   object-fit: cover;
   top: 0;
   z-index: -1;
@@ -250,7 +250,7 @@ header {
   background-position: center;
   position: absolute;
   width: 100%;
-  min-height: 100%;
+  min-height: 1611px;
   object-fit: cover;
   top: 0;
   z-index: -1;
@@ -456,6 +456,10 @@ header {
 /* .stars {
   width: 160px;
 } */
+
+.rating__value-container {
+  width: 35px;
+}
 
 .rating__value {
   font-family: "Montserrat", system-ui;
@@ -887,14 +891,14 @@ header {
 .form__input {
   background-color: #fff;
   width: 339px;
-  padding: 11px 283px 10px 16px;
+  padding: 11px 16px 10px 16px;
   border-radius: 4px;
   border-color: #D7D7D7;
   font-family: "Open Sans", sans-serif;
 }
 
 .form__input-text {
-  padding: 10px 265px 50px 16px;
+  padding: 10px 16px 50px 16px;
   margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;
 }
@@ -1175,8 +1179,27 @@ header {
     font-size: 14px;
   }
 
+  .arrow {
+    top: 1px;
+    left: 75px;
+  }
+
+  .arrow-2 {
+    top: 1px;
+    left: 120px;
+  }
+
+  .arrow-3 {
+    top: 1px;
+    left: 80px;
+  }
+
   .techno__form {
     gap: 60px;
+  }
+
+  .header__logo {
+    display: none;
   }
 
   .partner-12,
@@ -1218,6 +1241,12 @@ header {
 
   .footer__bottom-item-2 {
     margin-right: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header__menu {
+    margin-left: -140px;
   }
 }
 
