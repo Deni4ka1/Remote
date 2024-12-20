@@ -150,7 +150,7 @@ if (ratings.length > 0) {
 }
 
 function initRatings() {
-    let ratingActive, ratingValue;
+    let ratingActive, ratingValue, reviewsElement, hasRated = false;
 
     for (let index = 0; index < ratings.length; index++) {
         const rating = ratings[index];
@@ -169,6 +169,9 @@ function initRatings() {
     function initRatingVars(rating) {
         ratingActive = rating.querySelector('.rating__active');
         ratingValue = rating.querySelector('.rating__value');
+        reviewsElement = rating.querySelector('.reviews');
+        // Ініціалізація прапорця для фіксації чи користувач вже поставив оцінку
+        hasRated = !!ratingValue.dataset.hasRated;
     }
 
     function setRatingActiveWidth(index = parseFloat(ratingValue.dataset.value || ratingValue.innerHTML)) {
@@ -205,6 +208,13 @@ function initRatings() {
                 ratingValue.dataset.value = value; // Збереження нового значення
                 ratingValue.innerHTML = formatRating(value);
                 setRatingActiveWidth(value);
+
+                // Збільшення кількості відгуків, якщо це перша оцінка
+                if (!hasRated) {
+                    increaseReviewsCount();
+                    hasRated = true; // Встановлення прапорця, що оцінка була поставлена
+                    ratingValue.dataset.hasRated = "true"; // Збереження стану
+                }
             });
         }
     }
@@ -220,7 +230,17 @@ function initRatings() {
         // Форматування: без десяткової частини для цілих чисел
         return Number.isInteger(value) ? value.toString() : value.toFixed(1);
     }
+
+    function increaseReviewsCount() {
+        const reviewsText = reviewsElement.textContent.trim();
+        const match = reviewsText.match(/(\d+)/); // Витягуємо кількість відгуків
+        if (match) {
+            const reviewsCount = parseInt(match[1], 10) + 1;
+            reviewsElement.textContent = `${reviewsCount} reviews`;
+        }
+    }
 }
+
 
 
 
