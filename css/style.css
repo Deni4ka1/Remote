@@ -346,6 +346,7 @@ header {
   top: 410px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  box-shadow: 0px 2px 12px 1px #1D336B40;
 }
 
 .social-item {
