@@ -40,7 +40,7 @@
                 <div class="header__container-items">
                     <div class="menu__close">close</div>
                     <ul class="header__items">
-                        <li><a href="#" class="header__item item__arrow">SERVICES
+                        <li><a href="#" class="header__item item__arrow" id="services">SERVICES
                                 <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 11L3 6.4L4.55556 5L8 8.2L11.4444 5L13 6.4L8 11Z" fill="white" />
@@ -48,26 +48,33 @@
                             <ul class="menu__sub-list">
                                 <div class="menu__sub-line"></div>
                                 <li>
-                                    <a href="#dynamic-content1" class="menu__sub-link">MOBILE APPLICATION
+                                    <a href="/Projects/Remote/services.html#mobile-app" id="dynamic-content1"
+                                        class="menu__sub-link" data-target="mobile-app">MOBILE APPLICATION
                                         DEVELOPMENT</a>
                                 </li>
                                 <li>
-                                    <a href="#dynamic-content2" class="menu__sub-link">GAME DEVELOPMENT OUTSOURCING</a>
+                                    <a href="/Projects/Remote/services.html#game-dev" id="dynamic-content2"
+                                        class="menu__sub-link" data-target="game-dev">GAME DEVELOPMENT OUTSOURCING</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="menu__sub-link">VR APP DEVELOPMENT</a>
+                                    <a href="/Projects/Remote/services.html#vr-app" id="dynamic-content3"
+                                        class="menu__sub-link" data-target="vr-app">VR APP DEVELOPMENT</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="menu__sub-link">DEDICATED DEVELOPERS</a>
+                                    <a href="/Projects/Remote/services.html#dedicated-dev" class="menu__sub-link"
+                                        data-target="dedicated-dev">DEDICATED DEVELOPERS</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="menu__sub-link">SDK DEVELOPMENT</a>
+                                    <a href="/Projects/Remote/services.html#sdk-dev" class="menu__sub-link"
+                                        data-target="sdk-dev">SDK DEVELOPMENT</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="menu__sub-link">3D MODELING SERVICES</a>
+                                    <a href="/Projects/Remote/services.html#3d-mod" class="menu__sub-link"
+                                        data-target="3d-mod">3D MODELING SERVICES</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="menu__sub-link">AR APP DEVELOPMENT</a>
+                                    <a href="/Projects/Remote/services.html#ar-app" class="menu__sub-link"
+                                        data-target="ar-app">AR APP DEVELOPMENT</a>
                                 </li>
                             </ul>
                         </li>
@@ -126,7 +133,7 @@
     <main class="main">
         <div class="container">
             <div class="navigation__line">
-                <ul class="nav__line">
+                <ul class="nav__line" id="nav-line">
                     <li>
                         <a href="/Projects/Remote/index.html" class="nav__text">Home
                             <svg class="nav__text-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -144,17 +151,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/Projects/Remote/services.html" class="nav__text">Mobile Application Development</a>
+                        <a href="/Projects/Remote/services.html#mobile-app" class="nav__text">Mobile Application
+                            Development</a>
+                    </li>
+                    <li>
+                        <a href="/Projects/Remote/services.html#game-dev" class="nav__text">Game Development
+                            Outsourcing</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <section id="dynamic-content1" class="service__change">
+        <section id="mobile-app" class="service__change">
             <div class="container container__service-change">
                 <div class="service__change-mobile">
                     <div class="service__part-title">
                         <h1 class="service__title">MOBILE APPLICATION DEVELOPMENT</h1>
-                        <img class="change-img" src="images/service__mobile-img.svg" alt="mobile-img">
+                        <img class="change-img" src="images/service__mobile-img.svg" alt="service__mobile-img">
                     </div>
                     <div class="service__parts">
                         <div class="service__part-text">
@@ -190,12 +202,217 @@
             </div>
             </div>
         </section>
-        <section id="dynamic-content2" class="service__change">
+        <section id="game-dev" class="service__change">
             <div class="container container__service-change">
                 <div class="service__change-mobile">
                     <div class="service__part-title">
                         <h1 class="service__title">GAME dEVELOPMENT OUTSOURCING</h1>
-                        <img class="change-img" src="images/service__gaming-img.svg" alt="mobile-img">
+                        <img class="change-img" src="images/service__gaming-img.svg" alt="service__gaming-img">
+                    </div>
+                    <div class="service__parts">
+                        <div class="service__part-text">
+                            <h3 class="service__subtilte">Header 1</h3>
+                            <p class="service__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis
+                                fringilla non elit.
+                                Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui
+                                et
+                                est. In in aliquet libero.
+                                In ac enim non lectus convallis feugiat. </p>
+                            <p class="service__text2">Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut,
+                                suscipit sit amet sapien.
+                                Sed ut pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique
+                                gravida.
+                            </p>
+                        </div>
+                        <div class="service__part-text part__text-2">
+                            <h3 class="service__subtilte">Header 2</h3>
+                            <p class="service__text1">Fusce consectetur vel urna ut venenatis. Etiam in mauris odio.
+                                Phasellus sed turpis vitae justo
+                                maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus
+                                quis.
+                            </p>
+                            <p class="service__text2">Maecenas venenatis molestie eros, in pulvinar urna elementum quis.
+                                Praesent a lorem quis sem cursus feugiat sed nec erat.
+                                Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis
+                                sem
+                                cursus feugiat sed nec erat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="vr-app" class="service__change">
+            <div class="container container__service-change">
+                <div class="service__change-mobile">
+                    <div class="service__part-title">
+                        <h1 class="service__title">VR APP DEVELOPMENT</h1>
+                        <img class="change-img" src="images/vr_app-img.svg" alt="vr_app-img">
+                    </div>
+                    <div class="service__parts">
+                        <div class="service__part-text">
+                            <h3 class="service__subtilte">Header 1</h3>
+                            <p class="service__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis
+                                fringilla non elit.
+                                Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui
+                                et
+                                est. In in aliquet libero.
+                                In ac enim non lectus convallis feugiat. </p>
+                            <p class="service__text2">Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut,
+                                suscipit sit amet sapien.
+                                Sed ut pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique
+                                gravida.
+                            </p>
+                        </div>
+                        <div class="service__part-text part__text-2">
+                            <h3 class="service__subtilte">Header 2</h3>
+                            <p class="service__text1">Fusce consectetur vel urna ut venenatis. Etiam in mauris odio.
+                                Phasellus sed turpis vitae justo
+                                maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus
+                                quis.
+                            </p>
+                            <p class="service__text2">Maecenas venenatis molestie eros, in pulvinar urna elementum quis.
+                                Praesent a lorem quis sem cursus feugiat sed nec erat.
+                                Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis
+                                sem
+                                cursus feugiat sed nec erat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="dedicated-dev" class="service__change">
+            <div class="container container__service-change">
+                <div class="service__change-mobile">
+                    <div class="service__part-title">
+                        <h1 class="service__title">DEDICATED DEVELOPERS</h1>
+                        <img class="change-img" src="images/dedicated__dev-img.svg" alt="dedicated__dev-img">
+                    </div>
+                    <div class="service__parts">
+                        <div class="service__part-text">
+                            <h3 class="service__subtilte">Header 1</h3>
+                            <p class="service__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis
+                                fringilla non elit.
+                                Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui
+                                et
+                                est. In in aliquet libero.
+                                In ac enim non lectus convallis feugiat. </p>
+                            <p class="service__text2">Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut,
+                                suscipit sit amet sapien.
+                                Sed ut pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique
+                                gravida.
+                            </p>
+                        </div>
+                        <div class="service__part-text part__text-2">
+                            <h3 class="service__subtilte">Header 2</h3>
+                            <p class="service__text1">Fusce consectetur vel urna ut venenatis. Etiam in mauris odio.
+                                Phasellus sed turpis vitae justo
+                                maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus
+                                quis.
+                            </p>
+                            <p class="service__text2">Maecenas venenatis molestie eros, in pulvinar urna elementum quis.
+                                Praesent a lorem quis sem cursus feugiat sed nec erat.
+                                Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis
+                                sem
+                                cursus feugiat sed nec erat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="sdk-dev" class="service__change">
+            <div class="container container__service-change">
+                <div class="service__change-mobile">
+                    <div class="service__part-title">
+                        <h1 class="service__title">SDK DEVELOPMENT</h1>
+                        <img class="change-img" src="images/sdk__dev-img.svg" alt="sdk__dev-img">
+                    </div>
+                    <div class="service__parts">
+                        <div class="service__part-text">
+                            <h3 class="service__subtilte">Header 1</h3>
+                            <p class="service__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis
+                                fringilla non elit.
+                                Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui
+                                et
+                                est. In in aliquet libero.
+                                In ac enim non lectus convallis feugiat. </p>
+                            <p class="service__text2">Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut,
+                                suscipit sit amet sapien.
+                                Sed ut pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique
+                                gravida.
+                            </p>
+                        </div>
+                        <div class="service__part-text part__text-2">
+                            <h3 class="service__subtilte">Header 2</h3>
+                            <p class="service__text1">Fusce consectetur vel urna ut venenatis. Etiam in mauris odio.
+                                Phasellus sed turpis vitae justo
+                                maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus
+                                quis.
+                            </p>
+                            <p class="service__text2">Maecenas venenatis molestie eros, in pulvinar urna elementum quis.
+                                Praesent a lorem quis sem cursus feugiat sed nec erat.
+                                Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis
+                                sem
+                                cursus feugiat sed nec erat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="3d-mod" class="service__change">
+            <div class="container container__service-change">
+                <div class="service__change-mobile">
+                    <div class="service__part-title">
+                        <h1 class="service__title">SDK 3D MODELING </h1>
+                        <img class="change-img" src="images/3d__mod-img.svg" alt="3d__mod-img">
+                    </div>
+                    <div class="service__parts">
+                        <div class="service__part-text">
+                            <h3 class="service__subtilte">Header 1</h3>
+                            <p class="service__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis
+                                fringilla non elit.
+                                Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui
+                                et
+                                est. In in aliquet libero.
+                                In ac enim non lectus convallis feugiat. </p>
+                            <p class="service__text2">Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut,
+                                suscipit sit amet sapien.
+                                Sed ut pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique
+                                gravida.
+                            </p>
+                        </div>
+                        <div class="service__part-text part__text-2">
+                            <h3 class="service__subtilte">Header 2</h3>
+                            <p class="service__text1">Fusce consectetur vel urna ut venenatis. Etiam in mauris odio.
+                                Phasellus sed turpis vitae justo
+                                maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus
+                                quis.
+                            </p>
+                            <p class="service__text2">Maecenas venenatis molestie eros, in pulvinar urna elementum quis.
+                                Praesent a lorem quis sem cursus feugiat sed nec erat.
+                                Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis
+                                sem
+                                cursus feugiat sed nec erat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="ar-app" class="service__change">
+            <div class="container container__service-change">
+                <div class="service__change-mobile">
+                    <div class="service__part-title">
+                        <h1 class="service__title">AR APP DEVELOPMENT</h1>
+                        <img class="change-img" src="images/ar__app-img.svg" alt="ar__app-img">
                     </div>
                     <div class="service__parts">
                         <div class="service__part-text">

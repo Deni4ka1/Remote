@@ -97,6 +97,7 @@ header {
     transition: all 0.3s ease 0s;
     pointer-events: none;
     margin-left: 20px;
+    background-color: #fff;
 }
 
 .menu__sub-link {
