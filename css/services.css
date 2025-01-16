@@ -337,23 +337,23 @@ path {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 0px 2px 12px 1px #1D336B40;
-  }
-  
-  .social-item {
+}
+
+.social-item {
     border-bottom: 1px solid rgb(209, 207, 207);
     padding: 12px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .social-item-s {
+}
+
+.social-item-s {
     padding: 12px;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .techno__form {
-    margin-bottom: 120px;
+.techno__form {
+    margin-bottom: 190px;
     box-shadow: 0px 3px 16px 2px #1D336B26;
     border-radius: 16px;
     max-width: 900px;
@@ -363,67 +363,67 @@ path {
     justify-content: center;
     align-items: center;
     padding: 30px 33px 30px 33px;
-  }
-  
-  .form__rating {
+}
+
+.form__rating {
     display: flex;
     gap: 13px;
-  }
-  
-  /* .stars {
+}
+
+/* .stars {
     width: 160px;
   } */
-  
-  .rating__value-container {
+
+.rating__value-container {
     width: 35px;
-  }
-  
-  .rating__value {
+}
+
+.rating__value {
     font-family: "Montserrat", system-ui;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.4;
     padding-top: 5px;
-  }
-  
-  .rating__body {
+}
+
+.rating__body {
     position: relative;
     width: 140px;
-  }
-  
-  .rating__body::before {
+}
+
+.rating__body::before {
     content: "★★★★★";
     display: block;
     font-size: 33px;
     color: #E1E1E1;
-  }
-  
-  .rating__items {
+}
+
+.rating__items {
     display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-  }
-  
-  .rating__item {
+}
+
+.rating__item {
     flex: 0 0 20%;
     height: 100%;
     margin: 0;
     opacity: 0;
-  }
-  
-  .rating__active {
+}
+
+.rating__active {
     position: absolute;
     width: 0%;
     height: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
-  }
-  
-  .rating__active::before {
+}
+
+.rating__active::before {
     content: "★★★★★";
     font-size: 33px;
     position: absolute;
@@ -432,22 +432,22 @@ path {
     top: 0;
     left: 1px;
     color: #06B25F;
-  }
-  
-  .reviews {
+}
+
+.reviews {
     font-family: "Montserrat", system-ui;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
     padding-top: 5px;
-  }
-  
-  .techno__form-container {
+}
+
+.techno__form-container {
     display: flex;
     justify-content: center;
-  }
-  
-  .form__button {
+}
+
+.form__button {
     font-family: "Montserrat", system-ui;
     background-color: #06B25F;
     color: #fff;
@@ -456,12 +456,16 @@ path {
     border-radius: 6px;
     padding: 14px 16px;
     cursor: pointer;
-  }
-  
-  .form__button:hover {
+}
+
+.form__button:hover {
     background-color: #159859;
     transition: all .3s ease;
-  }
+}
+
+.container__info {
+    margin-bottom: 170px;
+}
 
 
 
@@ -550,6 +554,7 @@ path {
     .header__menu {
         margin-left: -140px;
     }
+
     .service__part-title {
         justify-content: center;
         margin-right: 0;
@@ -654,7 +659,7 @@ path {
     }
 
     .header__items,
-    li {
+    .header__items-li {
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -736,7 +741,7 @@ path {
 
     .social__box {
         display: none;
-      }
+    }
 }
 
 @media (max-width: 640px) {
@@ -747,6 +752,7 @@ path {
     .service__parts {
         gap: 60px;
     }
+
     .service__part-text {
         max-width: 400px;
         min-height: 320px;

@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container__recent-projects {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.recent__projects-bg-img {
+    margin-left: -120px;
+    z-index: 1;
+}
+
+.recent__projects-title {
+    position: absolute;
+    z-index: 10;
+}
+
+.swiper {
+    position: absolute;
+    z-index: 10;
+}
