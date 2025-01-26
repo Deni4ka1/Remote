@@ -641,7 +641,11 @@
         <section class="section__recent-projects">
             <link rel="stylesheet" href="css/recent-projects.css">
             <div class="container container__recent-projects">
-                <img class="recent__projects-bg-img" src="images/recent_projects-bg-img.svg" alt="recent-projects-bg">
+                <picture>
+                    <source srcset="images/recent_projects-bg-m-img.svg" media="(max-width: 1200px)">
+                    <img class="recent__projects-bg-img" src="images/recent_projects-bg-img.svg"
+                        alt="recent-projects-bg">
+                </picture>
                 <h1 class="recent__projects-title title">RECENT PROJECTS</h1>
                 <div class="recent__projects-slider swiper">
                     <div class="swiper-wrapper">
@@ -675,7 +679,7 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide swiper-slide__duplicate">
                             <a href="#" class="swiper-slide__link">
                                 <img class="swiper-img" src="images/recent-projects-swiper-img-1.png"
                                     alt="recent-projects-swiper-img-1">
@@ -685,7 +689,7 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide swiper-slide__duplicate">
                             <a href="#" class="swiper-slide__link">
                                 <img class="swiper-img" src="images/recent-projects-swiper-img-2.png"
                                     alt="recent-projects-swiper-img-2">
@@ -695,7 +699,7 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide swiper-slide__duplicate">
                             <a href="#" class="swiper-slide__link">
                                 <img class="swiper-img" src="images/recent-projects-swiper-img-3.png"
                                     alt="recent-projects-swiper-img-3">
