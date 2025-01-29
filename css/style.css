@@ -1407,7 +1407,7 @@ header {
     top: 0;
     background-color: #fff;
     height: 1600px;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: transform .5s ease;
     box-shadow: 10px 10px 16px 10px rgba(29, 51, 107, 0.60);
 
@@ -1418,7 +1418,7 @@ header {
   }
 
   .header__container-items.menu--close {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 
   .no-scroll {

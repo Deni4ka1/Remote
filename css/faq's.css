@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container__faqs {
+    max-width: 1016px;
+    padding: 0;
+    margin-bottom: 240px;
+}
+
+.faqs__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 68px;
+}
+
+.faqs__list-items {
+    position: relative;
+    font-family: "Montserrat", system-ui;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0D6EB7;
+    width: 894px;
+}
+
+.faqs__list-item {
+    margin: 26px 27px 26px 46px;
+    position: relative;
+}
+
+.faqs__list-item::before {
+    content: '';
+    background-image: url(../images/li__ellipse-img.svg);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: -20px;
+    top: 9px;
+}
+
+.faqs__list-descr {
+    display: flex;
+    justify-content: center;
+
+}
+
+.faqs__item-descr {
+    max-width: 894px;
+}
+
+.faqs__item-descr {
+    position: relative;
+}
+
+.faqs__descr-title::before {
+    content: '';
+    background-image: url(../images/arrow-top.svg);
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    left: -35px;
+    top: 10px;
+}
+
+.faqs__item-descr {
+    margin-left: 40px;
+}
+
+.faqs__descr-title {
+    font-family: "Montserrat", system-ui;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.faqs__descr {
+    font-family: "Montserrat", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.descr__bottom-line {
+    display: flex;
+    border: 1px solid #0D6EB7;
+    height: 100%;
+    opacity: 50%;
+}

@@ -114,7 +114,7 @@ a {
 
 @media (max-width: 1600px) {
     .swiper-slide {
-        margin-right: 40px;
+        width: 400px;
     }
 
     .swiper-slide__title {
@@ -145,7 +145,6 @@ a {
     .recent__projects-bg-img {
         width: 100%;
         margin: 0 auto;
-
     }
 
     .recent__projects-title {
@@ -177,7 +176,8 @@ a {
     }
 
     .swiper-slide {
-        margin-right: 0;
+        margin-right: 0 !important;
+        width: 400px !important;
     }
 
     .swiper-slide__duplicate {
@@ -196,8 +196,23 @@ a {
         padding-left: 0;
     }
 
+    .recent__projects-bg-img {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
     .recent__projects-title {
         margin-top: 200px;
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper-slide {
+        width: 320px !important;
+        height: 392px !important;
+    }
+    .swiper-img {
+        width: 338px;
     }
 }
