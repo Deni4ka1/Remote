@@ -194,6 +194,11 @@ a {
     .main {
         padding-right: 0;
         padding-left: 0;
+        overflow: hidden;
+    }
+
+    .container__recent-projects {
+        overflow: hidden;
     }
 
     .recent__projects-bg-img {
@@ -212,6 +217,7 @@ a {
         width: 320px !important;
         height: 392px !important;
     }
+
     .swiper-img {
         width: 338px;
     }

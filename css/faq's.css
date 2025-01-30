@@ -26,6 +26,10 @@ a {
     margin-bottom: 68px;
 }
 
+.arc-start-img {
+    margin-right: 33px;
+}
+
 .faqs__list-items {
     position: relative;
     font-family: "Montserrat", system-ui;
@@ -37,7 +41,7 @@ a {
 }
 
 .faqs__list-item {
-    margin: 26px 27px 26px 46px;
+    margin: 26px 27px 26px 0px;
     position: relative;
 }
 
@@ -54,7 +58,6 @@ a {
 .faqs__list-descr {
     display: flex;
     justify-content: center;
-
 }
 
 .faqs__item-descr {
@@ -73,10 +76,16 @@ a {
     position: absolute;
     left: -35px;
     top: 10px;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
 }
 
 .faqs__item-descr {
     margin-left: 40px;
+}
+
+.faqs__descr.active {
+    display: block;
 }
 
 .faqs__descr-title {
@@ -86,19 +95,71 @@ a {
     line-height: 30px;
     margin-top: 18px;
     margin-bottom: 14px;
+    cursor: pointer;
+    margin-right: 70px;
 }
 
-.faqs__descr {
+.faqs__descr-title.active::before {
+    transform: rotate(0deg);
+}
+
+.faqs__descr { 
     font-family: "Montserrat", system-ui;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 16px;
+    max-width: 858px;
+    display: none;
 }
 
 .descr__bottom-line {
     display: flex;
     border: 1px solid #0D6EB7;
     height: 100%;
-    opacity: 50%;
+    opacity: 40%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .container__faqs {
+        padding: 0 30px;
+    }
+
+    .faqs__descr-title {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .faqs__list {
+        margin-bottom: 50px;
+    }
+
+    .faqs__descr-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .faqs__descr {
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .faqs__list-item {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
